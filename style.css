@@ -1,0 +1,445 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+h1,h2{
+    font-family: sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style:none;
+}
+.flex{
+    display:flex;
+}
+.flex_space{
+    display: flex;
+    justify-content:space-between;
+}
+button{
+    border:none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.primary-btn{
+    padding: 15px 40px;
+    background: rgb(212, 149, 12);
+    font-weight: bold;
+    color: white;
+}
+.secondary-btn{
+    padding: 15px 40px;
+    background: none;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+}
+.container{
+    max-width:85%;
+    margin: auto;
+}
+
+/*---header---*/
+header{
+    height: 10vh;
+    line-height: 10vh;
+    padding:0 20px;
+}
+header img{
+    margin: 20px 0;
+}
+header ul{
+    display: inline-block;
+}
+header ul li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+header ul li a{
+    color: black;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+header ul li a:hover{
+    color: rgb(228, 224, 16);
+}
+.logo h2{
+ color: goldenrod;
+ font-family: sancreek;
+ font-weight: bolder;
+ font-size: 40px;
+
+
+}
+header i{
+    margin: 0 20px;
+}
+header button{
+    padding:13px 40px;
+}
+header .navlinks span{
+    display: none;
+}
+@media only screen and (max-width:768px)
+{
+    header ul{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height:100vh;
+        background: brown;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        text-align: center;
+        z-index: 9;
+    }
+    header ul li{
+        display: block;
+    }
+    header ul li a{
+        color: white;
+    }
+    header i{
+        color: white;
+    }
+    header .navlinks i {
+        color: black;
+        display: block;
+        cursor: pointer;
+        line-height: 10vh;
+        font-size: 25px;
+    }
+}
+/*---header---*/
+
+/*home*/
+.home{
+    height:100vh;
+    color:#fff;
+}
+.home img{
+    width:100%;
+    height:100vh;
+}
+.home .text{
+    position: absolute;
+    top:35%;
+    left:5%;
+}
+.home .text h1{
+    font-size: 80px;
+    font-family: serif;
+    font-weight: 400;
+}
+.home p{
+    margin: 20px 0;
+}
+.home button{
+    margin-right: 20px;
+}
+
+/*home*/
+.grid{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+}
+/*about*/
+.left,.right{
+    width:50%;
+    padding: 30px;
+}
+.top{
+    margin-top: 80px;
+}
+.mtop{
+    margin-top: 40px;
+}
+.heading h1{
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+    top:-30px;
+}
+.heading h2{
+    margin: 30px 0;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: 400;
+}
+.about .heading h1{
+    top:55px;
+}
+.about{
+    position: relative;
+}
+.about .left{
+    margin-top:30px ;
+}
+.about p {
+    font-size: 15px;
+}
+.about button{
+    margin: 30px 0;
+}
+/*about*/
+
+/*rooms*/
+.rooms{
+    position: relative;
+}
+.rooms .text{
+    border: 1px solid gray;
+    border-top: none;
+    padding: 30px;
+}
+.rooms i{
+    font-size: 12px;
+    color: gold;
+    margin: 15px 0;
+    margin-right: 5px;
+}
+.rooms p{
+    margin: 20px 0;
+    opacity: 0.7;
+}
+.rooms h3{
+    font-size: 30px;
+    line-height: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: darkslateblue;
+}
+.rooms h3 span{
+    font-size: 15px;
+    font-weight: 400;
+    color: darkblue;
+}
+
+/*rooms*/
+/* Gallary */
+.gallary{
+    position: relative;
+}
+.gallary img{
+    width: 100%;
+    height: 100%;
+}
+/* Gallary */
+/*services*/
+.services{
+    position: relative;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+  
+}
+.services .left{
+    padding: 30px 0;
+}
+.services .box{
+    border: 1px solid gray;
+    text-align: center;
+    transition: 0.5s;
+    padding: 20px;
+}
+.services .box .text{
+    padding:30px 0;
+    border: 1px dashed white;
+}
+.services i{
+    font-size: 50px;
+    color: goldenrod;
+    transition: 0.5s;
+}
+.services h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20p;
+    transition: 0.5s;
+}
+.services img{
+    width: 100%;
+    height: 100%;
+}
+.services .box:hover{
+    background-color: goldenrod;
+    color: #fff;
+    cursor: pointer;
+}
+.services .box:hover i,
+.services .box:hover h3{
+    color: #fff;
+
+}
+/*services*/
+/*customer*/
+.customer{
+    background-image: url("images/view2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.customer .container{
+    max-width: 70%;
+}
+.customer .item{
+    padding: 10% 0;
+}
+.customer i{
+    width: 100px;
+    height: 100px;
+    background: goldenrod;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.customer p{
+line-height: 30px;
+}
+.cutomer h3{
+    margin-top: 20px;
+    color: goldenrod;
+}
+.customer span{
+    font-size: 15px;
+}
+.owl-carousel2 .owl-dots{
+    position: absolute;
+    bottom: 70px;
+    left: 46.6%;
+}
+.owl-carousel2 .owl-dots i{
+    color: goldenrod;
+}
+.owl-carousel2 .owl-dots i:hover button{
+   color: goldenrod !important;
+}
+.owl-carousel2 span{
+    border: 2px solid white;
+    background: transparent !important;
+}
+.owl-carousel2 .active span{
+    background: goldenrod !important;
+    border: 2px solid goldenrod;
+}
+/*customer*/
+
+/*footer*/
+footer{
+    background: #282834;
+    color: ghostwhite;
+    padding: 10% 0 5% 0;
+}
+footer .grid{
+    grid-template-columns: 6fr 3fr 3fr;
+}
+footer p{
+    color: ghostwhite;
+    font-size: 15px;
+    line-height: 25px;
+}
+footer.icon i{
+    margin: 20px 20px 20px 0;
+    color: rgba(248, 248, 255, 0.864);
+}
+footer h2{
+    color: white;
+    margin-bottom: 10px;
+}
+footer li{
+    margin-bottom: 20px;
+}
+footer i{
+    color: goldenrod;
+    margin: 20px 0;
+    margin-right: 20px;
+}
+footer label{
+    margin: 20px 0;
+}
+.legal{
+    padding: 15px 0;
+    background: #282834;
+    color: ghostwhite;
+    border-top: 1px solid rgb(255,255,255,0.2);
+}
+/*footer*/
+@media only screen and (max-width:1024px){
+    .home{
+        color: #fff;
+        height: 50vh;
+    }
+    .home img{
+        width: 100%;
+        height: 50vh;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .book h1{
+        margin-bottom: 20px;
+    }
+    .container .flex,
+    .book .flex_space{
+        flex-direction: column;
+    }
+    .book .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .counter .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .owl-carousel .owl-nav .owl-prev{
+        left: 80%;
+
+    }
+    .gallery .owl-nav .owl-prev{
+        left: 75%;
+    }
+    .rooms .owl-nav .owl-prev,
+    .rooms .owl-nav .owl-next
+    {
+        top: -50%;
+    }
+    .gallery .owl-nav .owl-prev,
+    .gallery .owl-nav .owl-next{
+        top: -80%;
+    }
+    .services .flex_space{
+        flex-direction: column;
+    }
+    .customer{
+        height: 60vh;
+    }
+    .customer .container{
+        max-width: 80%;
+    }
+    .owl-carousel2 .owl-dots{
+        bottom: 0;
+        left: 44.5%;
+    }
+    footer .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
